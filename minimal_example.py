@@ -1,8 +1,7 @@
 import robotic as ry
 
 C = ry.Config()
-C.addFile(ry.raiPath("scenarios/pandasTable.g"))
-
+C.addFile("pandasTable_fixedCam.g")
 bot = ry.BotOp(C, useRealRobot=True)
 
 qHome = bot.get_qHome()
